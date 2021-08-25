@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Butcherman&family=Catamaran&display=swap");
+
+@font-face {
+	font-family: comicFont;
+	src: url(Bangers.ttf);
+}
+
+@font-face {
+	font-family: angryFont;
+	src: url(./Aggressive\ Angry\ Baby\ Killer.ttf);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	min-width: 100vw;
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8)),
+		url("https://i.pinimg.com/originals/35/03/e3/3503e3ea1d86a5c6f3845f18fe297dde.jpg")
+			no-repeat center center / cover;
+	color: rgb(236, 13, 236);
+}
+
+#heading {
+	color: orange;
+	max-width: 650px;
+	text-align: center;
+	font-family: "Catamaran", sans-serif;
+	font-size: 4.5rem;
+	font-weight: 900;
+	position: absolute;
+	top: 2%;
+	left: 2%;
+}
+
+#main-container {
+	position: absolute;
+	top: 70%;
+	left: 40%;
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+}
+
+#stopwatch {
+	font-family: "Butcherman", sans-serif;
+	font-size: 4rem;
+}
+
+#main-container ul {
+	position: relative;
+	top: -1rem;
+	left: -2rem;
+}
+
+button {
+	width: 100px;
+	height: 40px;
+	border: 3px solid rgb(235, 110, 8);
+	/* border-radius: 50%; */
+	background: rgb(252, 207, 125);
+	color: rgba(255, 0, 0, 0.7);
+	padding: 2px;
+	font-size: 1.3rem;
+	cursor: pointer;
+	outline: none;
+}
+
+button:hover {
+	border: 3px solid rgba(235, 110, 8, 0.3);
+	color: rgba(255, 0, 0, 1);
+	font-size: 1.4rem;
+	transition: border 0.3s, color 0.3s, font-size 0.3s;
+}
+
+button:active {
+	transform: translate(0, 0.1rem);
+}
+
+#buttons li {
+	padding-left: 0.5rem;
+}
+
+#buttons {
+	display: flex;
+	list-style: none;
+}
+
+#start-timer #jokar-time {
+	font-family: "Butcherman", sans-serif;
+	width: 200px;
+	line-height: 3.8rem;
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: 100;
+	font-size: 3rem;
+	position: absolute;
+	top: 35%;
+	left: 65%;
+}
+
+#start-timer #calling-batman {
+	font-family: "comicFont", sans-serif;
+	width: 150px;
+	line-height: 2rem;
+	color: rgba(255, 255, 255, 0.65);
+	font-size: 2rem;
+	position: absolute;
+	top: 10%;
+	right: 5%;
+}
+
+#stop-timer {
+	font-family: "angryFont";
+	width: 200px;
+	color: darkgrey;
+	font-size: 3rem;
+	position: absolute;
+	top: 20%;
+	right: 10%;
+}

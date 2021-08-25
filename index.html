@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>StopWatch</title>
+</head>
+
+<body>
+
+    <div id="heading">
+        Joker's Revenge Timer
+    </div>
+
+    <div id="main-container">
+
+        <!-- Timer -->
+        <div id="stopwatch">
+            00:00:00:00
+        </div>
+        
+        <!-- Buttons -->
+        <ul id="buttons">
+            <li>
+                <button onclick="startTimer()">
+                    Start
+                </button>
+            </li>
+            <li>
+                <button onclick="stopTimer()">
+                    Stop
+                </button>
+            </li>
+            <li>
+                <button onclick="resetTimer()">
+                    Reset
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div id="start-timer" hidden>
+        <p id="jokar-time"> My Game Has Started! </p>
+        <p id="calling-batman">When will you come to stop me, Dark Knight?</p>
+    </div>
+
+    <div id="stop-timer" hidden>
+        HaHaHaaa!!! I will return Batman!
+    </div>
+        
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
