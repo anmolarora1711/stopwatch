@@ -17,5 +17,5 @@ A simple stopwatch in Joker's style using HTML, CSS and JavaScript.
 - On reseting, timer will set to zero and related text will appear on the screen
 
 ---
-***Hope you will enjoy***
+***Hope you will like it***
 ---
