@@ -10,28 +10,39 @@ let audio = new Audio("joker_laugh.mp3");
 
 let stoptime = true;
 
+// function for starting the timer
 function startTimer() {
 	if (stoptime == true) {
 		stoptime = false;
+		// hide the timer stopped text
 		timerStopped.setAttribute("hidden", "true");
+		// show the timer started text
 		timerStarted.removeAttribute("hidden");
+		// audio will start
 		audio.play();
+		// timer cycle start
 		timerCycle();
 	}
 }
 
+// function for stopping the timer
 function stopTimer() {
 	if (stoptime == false) {
 		stoptime = true;
 	}
 }
 
+// function for reset timer
 function resetTimer() {
 	timer.innerHTML = "00:00:00:00";
 	stoptime = true;
+	// hide the timer started text
 	timerStarted.setAttribute("hidden", "true");
+	// show the timer stopped text
 	timerStopped.removeAttribute("hidden");
+	// audio will pause on reseting
 	audio.pause();
+	// for starting audio from the beginning on starting the timer again
 	audio.currentTime = 0;
 	hr = 0;
 	min = 0;
@@ -41,8 +52,10 @@ function resetTimer() {
 	setTimeout(removeText, 3000);
 }
 
+// function 
 function timerCycle() {
 	if (stoptime == false) {
+		// parseInt method parses a string argument and returns an integer
 		hr = parseInt(hr);
 		min = parseInt(min);
 		sec = parseInt(sec);
@@ -87,6 +100,7 @@ function timerCycle() {
 	}
 }
 
+// function to show hidden text on stopping timer
 function removeText() {
 	timerStopped.setAttribute("hidden", "true");
 }
